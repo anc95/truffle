@@ -22,7 +22,7 @@ describe("migration errors", function () {
     config.networks = {
       development: {
         host: "127.0.0.1",
-        port: 8545
+        port: 8545,
       }
     };
     config.logger = logger;
@@ -173,7 +173,7 @@ describe("migration errors", function () {
     }
   });
 
-  it("error if there are js errors in the migrations script (async)", async function () {
+  it("errors if there are js errors in the migrations script (async)", async function () {
     this.timeout(70000);
 
     try {
